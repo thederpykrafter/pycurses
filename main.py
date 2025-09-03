@@ -29,8 +29,8 @@ def main(stdscr):
             case _:
                 should_exit = False
 
-        keydisplay = "[" + kb_input + "]"
-        stdscr.addstr(curses.LINES - 1, 1, keydisplay)
+        keydisplay = "<" + kb_input + ">"
+        stdscr.addstr(curses.LINES - 2, 1, keydisplay)
         stdscr.refresh()
         sleep(0.5)
 
